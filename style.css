@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.interface {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/laura_bailey_tlou_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease 0.3s;
+}
+
+.interface-vertial {
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.219) 10%, transparent 90%);
+}
+
+.interface-horizontal {
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 25%, transparent 80%);
+}
+
+.header-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    color: #f2f2f2;
+}
+
+.header-menu-optionsRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e6e6e6;
+}
+
+.header-menu-optionsLeft a,
+.header-menu-optionsRight div {
+    margin-right: 20px;
+}
+
+.header-menu-optionsLeft a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #f2f2f271;
+    transition: all ease 0.3s;
+}
+
+.header-menu-optionsLeft a:hover {
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+.header-menu-optionsRight div {
+    font-size: 20px;
+}
+
+.header-menu-optionsRight:last-child div {
+    margin-left: 20px;
+}
+
+.option {
+    cursor: pointer;
+}
+
+.listGames {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    padding-bottom: 18rem;
+    /* background-color: rgb(24, 49, 70); */
+}
+
+.ordenate {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.gameInfo {
+    display: inline-block;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 100px;
+    height: 50px;
+
+    margin-right: 1rem;
+
+    color: #f2f2f2;
+    transition: all ease 0.2s;
+    
+    cursor: pointer;
+}
+
+.gameInfo img {
+    border: 1px solid #131313;
+    border-radius: 10px;
+    width: 100%;
+    transition: all ease 0.2s;
+    transform: scale(0.8);
+}
+
+
+.gameInfo img:hover {
+    transform: translate(10rem);
+    margin: 3rem 0;
+    transform: scale(1.3);
+}
+
+.gameInfo p {
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    opacity: 1;
+}
+
+.game-options {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 70px;
+}
+
+.game-logo {
+    width: 250px;
+    height: 100px;
+}
+
+.game-logo img {
+    width: 100%;
+}
+
+.game-player {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    color: #f2f2f2;
+}
+
+.playGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playGame button:nth-child(1),
+.playGame button:nth-child(2) {
+    background: #333232c7;
+    color: #f2f2f2c9;
+    border: 2px solid #16141459;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.playGame button:nth-child(1) {
+    width: 200px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    border-radius: 25px;
+
+    margin-right: 10px;
+
+    outline: none;
+}
+
+.playGame button:nth-child(2) {
+    align-items: center;
+    border-radius: 100%;
+}
+
+.playGame button:nth-child(2) i {
+    font-size: 20px;
+}
+
+
+.gameConquests {
+    display: flex;
+    align-items: center;
+
+    background-color: #0a0a0a98;
+    padding: 20px;
+}
+
+.gameConquests p {
+    color: #8b8b8b;
+    padding-bottom: 10px;
+}
+
+.trophy,
+.progress {
+    margin-right: 20px;
+}
+
+.trophy i {
+    font-size: 32px;
+}
+
+.totaltrophies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 780px) {
+
+    .header-menu {
+        padding: 20px 25px;
+    }
+
+    .header-menu-optionsRight:last-child div {
+        margin-left: 0px;
+    }
+    
+
+    .ordenate,
+    .game-player {
+        display: inline-block;
+    }
+    
+    .ordenate {
+        margin-right: 0rem;
+    }
+
+    .game-options {
+        display: none;
+    }
+
+    .gameConquests {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gameInfo img {
+        border: 1px solid #131313;
+        border-radius: 10px;
+        width: 100%;
+        transition: all ease 0.2s;
+        transform: scale(0.8);
+    }
+    
+    
+    .gameInfo img:hover {
+        transform: translate(0);
+        margin: 0rem;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 300px) {
+    .interface {
+        height: 150vh;
+    }
+}
+
+

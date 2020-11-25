@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ps5 - Interface</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="interface">
+        <div class="interface-vertial">
+            <div class="interface-horizontal">
+                <header class="header-menu">
+                    <div class="header-menu-optionsLeft">
+                        <a href="">Jogos</a>
+                        <a href="">Mídia</a>
+                    </div>
+
+                    <div class="header-menu-optionsRight">
+                        <div class="search option"><i class="fas fa-search"></i></div>
+                        <div class="configures option"><i class="fas fa-cog"></i></div>
+                        <div class="cd option"><i class="fas fa-compact-disc"></i></div>
+                        <div class="time">14:50 PM</div>
+                    </div>
+                </header>
+
+                <section class="listGames">
+                    <div class="ordenate">
+                        <div class="gameInfo"><img src="/images/capaTLOU.jpg" alt=""><p>Game</p></div>
+                        <div class="gameInfo"><img src="/images/capaRDR2.jpeg" alt=""><p>Game</p></div>
+                        <div class="gameInfo"><img src="/images/capaTW3.jpg" alt=""><p>Game</p></div>
+                        <div class="gameInfo"><img src="/images/capaSM.jpg" alt=""><p>Game</p></div>
+                        <div class="gameInfo"><img src="/images/capaDS.jpg" alt=""><p>Game</p></div>
+                        <div class="gameInfo"><img src="/images/capaCyberpunk.png" alt=""><p>Game</p></div>
+                    </div>
+                </section>
+
+                <div class="game-options">
+                    <div class="game-logo">
+                        <img src="/images/logoTLOU.jpeg" alt="">
+                    </div>
+
+                    <div class="game-player">
+                        <div class="playGame">
+                            <button>Jogar</button>
+                            <button><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+
+                        <div class="gameConquests">
+                            <div class="trophy">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+
+                            <div class="progress">
+                                <p>Progresso</p>
+                                <h3>50%</h3>
+                            </div>
+
+                            <div class="totaltrophies">
+                                <p>Conquistados</p>
+                                <h3>13/26</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="games.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="selection.js" defer></script>
+</body>
+</html>
